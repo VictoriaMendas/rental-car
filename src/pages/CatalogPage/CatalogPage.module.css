@@ -5,21 +5,28 @@
 
 .carList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
 }
 
 .loadMore {
   display: block;
   margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  padding: 12px 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3470ff;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-
 .loadMore:hover {
   background-color: #0056b3;
 }

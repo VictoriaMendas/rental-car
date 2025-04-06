@@ -43,9 +43,12 @@ function CatalogPage() {
   };
 
   const handleLoadMore = () => {
-    loadCars();
+    loadCars(filters, false);
   };
-
+  console.log("hasMore:", hasMore);
+  console.log("cars length:", cars.length);
+  console.log("current page:", page);
+  console.log("filters:", filters);
   return (
     <div className={styles.catalog}>
       <Filter onFilterChange={handleFilterChange} />

@@ -11,12 +11,14 @@ const carsSlice = createSlice({
     setCars: (state, action) => {
       state.items = action.payload.cars;
       state.page = 1;
-      state.hasMore = action.payload.length > 0;
+      // state.hasMore = action.payload.length > 0;
+      state.hasMore = action.payload.length === 12;
     },
     appendCars: (state, action) => {
       state.items = [...state.items, ...action.payload];
       state.page += 1;
-      state.hasMore = action.payload.length > 0;
+      // state.hasMore = action.payload.length > 0;
+      state.hasMore = action.payload.length === 12;
     },
     resetCars: (state) => {
       state.items = [];

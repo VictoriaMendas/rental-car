@@ -8,7 +8,7 @@ export const fetchCars = async (page = 1, filters = {}) => {
   const { brand, price, mileageFrom, mileageTo } = filters;
   const params = {
     page,
-    limit: 12, //elems page
+    limit: 12,
     ...(brand && { brand }),
     ...(price && { rentalPrice: price }),
     ...(mileageFrom && { minMileage: mileageFrom }),
