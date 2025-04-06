@@ -1,0 +1,51 @@
+.home {
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 370px;
+  margin-bottom: 60px;
+}
+.h1 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.heroTitles {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.banner {
+  text-align: center;
+  background: url("../../images/img-1x.png") no-repeat center/cover;
+  width: 100%;
+  height: 700px;
+  padding: 100px 20px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.ctaButton {
+  padding: 12px 88px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3470ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #0b44cd;
+}

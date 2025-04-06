@@ -1,0 +1,51 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.filter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.filter input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  color: #101828;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  vertical-align: middle;
+}
+
+.filter button {
+  padding: 12px 51px;
+  background-color: #3470ff;
+  font-weight: 600;
+  font-family: inherit;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.filter button:hover {
+  background-color: #0b44cd;
+}
+.filter span {
+  margin-bottom: 8px;
+  color: #8d929a;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  vertical-align: middle;
+}

@@ -1,0 +1,39 @@
+.formContainer {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #218838;
+}
+
+.message {
+  margin-top: 10px;
+  color: green;
+}
