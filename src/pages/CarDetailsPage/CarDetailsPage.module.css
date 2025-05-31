@@ -1,9 +1,104 @@
-.details {
-  padding: 20px;
+.container {
+  padding: 40px;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.carHeader {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .carImage {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+  width: 461px;
+  height: 312px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.carInfo {
+  flex: 1;
+}
+
+.carTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #121417;
+  margin-bottom: 8px;
+}
+
+.carModel {
+  color: #3470ff;
+}
+
+.carDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: rgba(18, 20, 23, 0.5);
+  margin-bottom: 14px;
+}
+
+.description {
+  font-size: 14px;
+  color: #121417;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.accessories h3,
+.rentalConditions h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #121417;
+  margin-bottom: 8px;
+}
+
+.accessories p {
+  font-size: 12px;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.conditionsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.conditionsList li {
+  padding: 7px 14px;
+  background-color: #f9f9f9;
+  border-radius: 35px;
+  font-size: 12px;
+  color: #363535;
+}
+
+.conditionsList li span {
+  color: #3470ff;
+  font-weight: 600;
+}
+
+.rentalButton {
+  display: inline-block;
+  padding: 12px 50px;
+  background-color: #3470ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.rentalButton:hover {
+  background-color: #0b44cd;
 }

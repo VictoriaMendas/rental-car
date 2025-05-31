@@ -23,6 +23,12 @@ function Header() {
         >
           Catalog
         </NavLink>
+        <NavLink
+          to="/catalog/favorites"
+          className={({ isActive }) => (isActive ? styles.active : "")}
+        >
+          Favorites
+        </NavLink>
       </nav>
     </header>
   );
