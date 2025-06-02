@@ -1,0 +1,112 @@
+.loadMore {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3470ff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.loadMore:hover {
+  background-color: #0056b3;
+}
+/* .carFilterFav {
+  margin-top: 50px;
+} */
+.carListFav {
+  margin-top: 50px;
+}
+.filter {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8a8a89;
+}
+
+.select {
+  width: 224px;
+  height: 48px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  background-color: #f7f7fb;
+  font-size: 16px;
+  color: #121417;
+}
+
+.mileageInputs {
+  display: flex;
+  gap: 0;
+}
+
+.input {
+  width: 160px;
+  height: 48px;
+  padding: 14px 24px;
+  border: none;
+  background-color: #f7f7fb;
+  font-size: 16px;
+  color: #121417;
+}
+
+.input:first-child {
+  border-radius: 14px 0 0 14px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+}
+
+.input:last-child {
+  border-radius: 0 14px 14px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.submitButton,
+.resetButton {
+  height: 48px;
+  padding: 14px 44px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #3470ff;
+  color: #fff;
+}
+
+.submitButton:hover {
+  background-color: #0b44cd;
+}
+
+.resetButton {
+  background-color: #fff;
+  color: #121417;
+  border: 1px solid #121417;
+}
+
+.resetButton:hover {
+  background-color: #f7f7fb;
+}

@@ -57,61 +57,120 @@ export default function Filter({ onFilterChange }) {
   );
 
   return (
+    // <form onSubmit={handleSubmit} className={css.filter}>
+    //   <div className={css.field}>
+    //     <label className={css.label}>
+    //       Car brand
+    //       <select
+    //         value={brand}
+    //         onChange={(e) => setBrand(e.target.value)}
+    //         className={css.select}
+    //       >
+    //         <option value="">All brands</option>
+    //         {brands.map((b) => (
+    //           <option key={b} value={b}>
+    //             {b}
+    //           </option>
+    //         ))}
+    //       </select>
+    //     </label>
+    //   </div>
+    //   <div className={css.field}>
+    //     <label className={css.label}>
+    //       Price/1 hour
+    //       <select
+    //         value={price}
+    //         onChange={(e) => setPrice(e.target.value)}
+    //         className={css.select}
+    //       >
+    //         <option value="">All prices</option>
+    //         {priceOptions.map((option) => (
+    //           <option key={option.value} value={option.value}>
+    //             {option.label}
+    //           </option>
+    //         ))}
+    //       </select>
+    //     </label>
+    //   </div>
+    //   <div className={css.field}>
+    //     <label className={css.label}>
+    //       Car mileage/km
+    //       <div className={css.mileageInputs}>
+    //         <input
+    //           type="number"
+    //           value={minMileage}
+    //           onChange={(e) => setMinMileage(e.target.value)}
+    //           placeholder="From"
+    //           className={css.input}
+    //         />
+    //         <input
+    //           type="number"
+    //           value={maxMileage}
+    //           onChange={(e) => setMaxMileage(e.target.value)}
+    //           placeholder="To"
+    //           className={css.input}
+    //         />
+    //       </div>
+    //     </label>
+    //   </div>
+    //   <div className={css.buttons}>
+    //     <button type="submit" className={css.submitButton}>
+    //       Search
+    //     </button>
+    //     <button type="button" onClick={handleReset} className={css.resetButton}>
+    //       Reset
+    //     </button>
+    //   </div>
+    // </form>
     <form onSubmit={handleSubmit} className={css.filter}>
       <div className={css.field}>
-        <label className={css.label}>
-          Car brand
-          <select
-            value={brand}
-            onChange={(e) => setBrand(e.target.value)}
-            className={css.select}
-          >
-            <option value="">All brands</option>
-            {brands.map((b) => (
-              <option key={b} value={b}>
-                {b}
-              </option>
-            ))}
-          </select>
-        </label>
+        <label className={css.label}>Car brand</label>
+        <select
+          value={brand}
+          onChange={(e) => setBrand(e.target.value)}
+          className={css.select}
+        >
+          <option value="">All brands</option>
+          {brands.map((b) => (
+            <option key={b} value={b}>
+              {b}
+            </option>
+          ))}
+        </select>
       </div>
       <div className={css.field}>
-        <label className={css.label}>
-          Price/1 hour
-          <select
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            className={css.select}
-          >
-            <option value="">All prices</option>
-            {priceOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <label className={css.label}>Price/1 hour</label>
+        <select
+          value={price}
+          onChange={(e) => setPrice(e.target.value)}
+          className={css.select}
+        >
+          <option value="">All prices</option>
+          {priceOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
       </div>
       <div className={css.field}>
-        <label className={css.label}>
-          Car mileage/km
-          <div className={css.mileageInputs}>
-            <input
-              type="number"
-              value={minMileage}
-              onChange={(e) => setMinMileage(e.target.value)}
-              placeholder="From"
-              className={css.input}
-            />
-            <input
-              type="number"
-              value={maxMileage}
-              onChange={(e) => setMaxMileage(e.target.value)}
-              placeholder="To"
-              className={css.input}
-            />
-          </div>
-        </label>
+        <label className={css.label}>Car mileage/km</label>
+        <div className={css.mileageInputs}>
+          <input
+            type="number"
+            value={minMileage}
+            onChange={(e) => setMinMileage(e.target.value)}
+            placeholder="From"
+            className={css.input}
+          />
+          <input
+            type="number"
+            value={maxMileage}
+            onChange={(e) => setMaxMileage(e.target.value)}
+            placeholder="To"
+            className={css.input}
+          />
+        </div>
       </div>
       <div className={css.buttons}>
         <button type="submit" className={css.submitButton}>

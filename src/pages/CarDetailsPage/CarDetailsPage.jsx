@@ -71,12 +71,12 @@ export default function CarDetails() {
       <div className={css.carHeader}>
         <img
           src={car.img || "https://via.placeholder.com/461x312"}
-          alt={`${car.make} ${car.model}`}
+          alt={`${car.model} ${car.model}`}
           className={css.carImage}
         />
         <div className={css.carInfo}>
           <h2 className={css.carTitle}>
-            {car.make} <span className={css.carModel}>{car.model}</span>,{" "}
+            {car.model} <span className={css.carModel}>{car.model}</span>,{" "}
             {car.year}
           </h2>
           <div className={css.carDetails}>
